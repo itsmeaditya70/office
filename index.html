@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- for nav bar  -->
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container nav-bar-elements fixed-top bg-white ">
+        <a class="navbar-brand" href="#"
+          ><img src="/images/logo.png" alt="" class="w-25  mt-2"
+        /></a>
+        <button
+          class="navbar-toggler offset-10 fs-2  "
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+         
+        >
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="fas fa-stream navbar-toggler-icon"></i>
+        </button>
+        <div
+          class=" toggle-body collapse navbar-collapse justify-content-end me-lg-5"
+          id="navbarNavAltMarkup"
+        >
+          <ul class="navbar-nav mt-2">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-section">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skill-section">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service-section">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio-section">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-section">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= home section ======================== -->
+    <section id="home">
+      <!-- <div class="home-img w-lg-75 w-100 position-absolute" >
+                <img src="/images/home-banner.png" alt="" id="home-banner" class="w-100"  >      
+            </div> -->
+
+      <div
+        class="home-right-img col-lg-4 col-12 me-lg-5 float-end"
+        data-aos="fade-left"
+      >
+        <img src="/images/home-right.webp" class="w-md-100 w-100 offset-md-0 offset-2 home-img" alt="" />
+      </div>
+
+      <div class="content-section col-lg-7 order-lg-1 order-2 col-10">
+        <h2>HELLO</h2>
+        <h2>I AM ADITYA RAJ</h2>
+
+        <div class="auto-typeing mt-3">
+          <span class="auto-type"></span>
+        </div>
+
+        <div class="btns mt-5">
+         <a href="#contact-section"> <button class="btn-1">HIRE ME</button></a>
+          <a href="ADITYA's Resume.pdf" download=""
+            ><button class="btn-2 ms-4">GET CV</button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= second section ======================== -->
+
+    <section id="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="about">
+            <div class="about-img" data-aos="fade-right">
+              <img src="/images/about-us.webp" alt="" class=" about-img col-lg-5 col-12" />
+
+              <div class="about-details w-75 offset-8  mb-4" data-aos="fade-up"
+              data-aos-duration="3000">
+                <h2>LET'S</h2>
+                <h2>INTRODUCE MYSELF</h2>
+                <br />
+
+                <p>
+                  I am Aditya Raj from Gaya,Bihar. I am currently pursuing my
+                  B.Tech degree in CSE from Parul University.
+                </p>
+                <p>I am a Full Stack Developer and love to learn new skills.</p>
+                <p>
+                  My hobbies are listening to songs, travelling to new places
+                  and learning new things.
+                </p>
+
+                <p>My short-term goal is to get a job in a reputed company.</p>
+
+                <p>
+                  And my long-term goal is to achieve a good position in good
+                  company.
+                </p>
+
+                <a href="ADITYA's Resume.pdf" download="">
+                  <button class="btn-3 mt-4" id="about-me-btn">
+                    Download CV
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline" data-aos="fade-up">
+            <ul>
+              <li>
+                <div class="timeline-content">
+                  <h2>Higher Secondary School</h2>
+                  <p>
+                    I have done my 10th from British English School . I got
+                    85.5% in 10th CBSE board.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="timeline-content">
+                  <h2>Senior Secondary School</h2>
+                  <p>
+                    I have done my 12th from Gyan Bharti Residential Complex . I
+                    got 56.6% in 12th CBSE board.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="timeline-content">
+                  <h2 id="grad">Graduation</h2>
+                  <p>
+                    I am pusing Btech(CSE) from Parul University and will be
+                    graduate in 2023. My CGPA upto 6th semester is 8.49
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== third section ============================== -->
+    <section id="skill-section" data-aos="fade-right">
+      <div class="container">
+        <div class="row">
+          <div class="skill-part col-lg-8 mx-auto" data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom">
+            <h3>SKILLS</h3>
+
+            <div class="skill-part">
+            <h6>HTML</h6>
+            <div class="progress" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
+              <div
+                class="progress-bar progress-bar-striped"
+                role="progressbar"
+                style="width: 90%"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+
+            <h6>CSS</h6>
+            <div class="progress" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
+              <div
+                class="progress-bar progress-bar-striped bg-success"
+                role="progressbar"
+                style="width: 80%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+
+            <h6>JavaScript</h6>
+            <div class="progress" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
+              <div
+                class="progress-bar progress-bar-striped bg-info"
+                role="progressbar"
+                style="width: 70%"
+                aria-valuenow=""
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+
+            <h6>Bootstrap</h6>
+            <div class="progress" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
+              <div
+                class="progress-bar progress-bar-striped bg-warning"
+                role="progressbar"
+                style="width: 60%"
+                aria-valuenow=""
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+
+            <h6>Angular</h6>
+            <div class="progress" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
+              <div
+                class="progress-bar progress-bar-striped bg-danger"
+                role="progressbar"
+                style="width: 40%"
+                aria-valuenow=""
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+
+            <h6>Graphics Designing</h6>
+            <div class="progress" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
+              <div
+                class="progress-bar progress-bar-striped bg-success"
+                role="progressbar"
+                style="width: 50%"
+                aria-valuenow=""
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+
+            <h6>C++</h6>
+            <div class="progress" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
+              <div
+                class="progress-bar progress-bar-striped bg-info"
+                role="progressbar"
+                style="width: 60%"
+                aria-valuenow=""
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- ========================================== services section ================================================ -->
+
+    <section id="service-section">
+      <div class="container mt-5">
+        <div class="row mt-5">
+          <h3 class="text-center mt-5">SERVICES OFFERED</h3>
+        </div>
+
+        <div class="services-card ">
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5" data-aos="zoom-in">
+          <div class="col">
+            <div class="card">
+              <img
+                src="/images/web dev.png"
+                class="card-img-top w-50 mt-3 mx-auto"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Frontend Web Development</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="/images/graphic designing.png"
+                class="card-img-top w-50 mx-auto mt-3"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Graphic Designing</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="/images/coding.png"
+                class="card-img-top w-50 mt-3 mx-auto"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">C++ Programming</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- =============================== Portfolio section ======================================== -->
+
+    <section id="portfolio-section">
+      <div class="container">
+        <div class="row">
+          <h3 class="text-center mt-5">PORTFOLIO</h3>
+
+        </div>
+
+      <div class="row card-section portfolio-card">
+
+        <div class="col-lg-3 col-md-6 mb-4" data-aos="flip-left">
+          <div class="card p-">
+            <span style="background-image:url('/images/pro2.png')"></span>
+            <div class="card-footer">
+              <h3 class="text-center mt-3 card-heading-1">Netflix Clone</h3>
+             
+              <a href="https://creative-squirrel-949f5a.netlify.app/ ">
+                <div class="col-md-12 text-center mt-4 card-btn rounded-pill ">
+                  <button type="button" class="btn text-white w-50">Preview</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-3 col-md-6 mb-4" data-aos="flip-right">
+          <div class="card p-0">
+            <span style="background-image:url('/images/pro1.png')"></span>
+            <div class="card-footer">
+              <h3 class="text-center mt-3 card-heading-1">Live Weather App</h3>
+              <a href="https://itsmeaditya70.github.io/Live-Weather-Website/ ">
+                <div class="col-md-12 text-center mt-4 card-btn rounded-pill">
+                  <button type="button" class="btn text-white w-50">Preview</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-3 col-md-6 mb-4" data-aos="flip-left">
+          <div class="card p-0">
+            <span style="background-image:url('/images/pro3.png')"></span>
+            <div class="card-footer">
+              <h3 class="text-center mt-3 card-heading-1"> College Review</h3>
+              <a href="https://silver-tapioca-2890ff.netlify.app">
+                <div class="col-md-12 text-center mt-4 card-btn rounded-pill">
+                  <button type="button" class="btn text-white w-50">Preview</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 mb-4" data-aos="flip-right">
+          <div class="card p-0">
+            <span style="background-image:url('/images/pro4.png')"></span>
+            <div class="card-footer">
+              <h3 class="text-center mt-3 card-heading-1">Animated Car</h3>
+              <a href="https://itsmeaditya70.github.io/car-animation/ ">
+                <div class="col-md-12 text-center mt-4 card-btn rounded-pill">
+                  <button type="button" class="btn text-white w-50">Preview</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 mb-4" data-aos="flip-right">
+          <div class="card p-0">
+            <span style="background-image:url('/images/pro5.png')"></span>
+            <div class="card-footer">
+              <h3 class="text-center mt-3 card-heading-1">Scratch Card</h3>
+              <a href="https://itsmeaditya70.github.io/Scratch_Card/ ">
+                <div class="col-md-12 text-center mt-4 card-btn rounded-pill">
+                  <button type="button" class="btn text-white w-50">Preview</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 mb-4" data-aos="flip-left">
+          <div class="card p-0">
+            <span style="background-image:url('/images/dark_mode.png')"></span>
+            <div class="card-footer">
+              <h3 class="text-center mt-3 card-heading-1">Dark Mode</h3>
+              <a href="https://itsmeaditya70.github.io/Dark-Mode/">
+                <div class="col-md-12 text-center mt-4 card-btn rounded-pill ">
+                  <button type="button" class="btn text-white w-50">Preview</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 mb-4" data-aos="flip-right">
+          <div class="card p-0">
+            <span style="background-image:url('/images/pro2.png')"></span>
+            <div class="card-footer">
+              <h3 class="text-center mt-3 card-heading-1">NETFLIX CLONE</h3>
+              <a href="https://creative-squirrel-949f5a.netlify.app/ ">
+                <div class="col-md-12 text-center mt-4 card-btn rounded-pill ">
+                  <button type="button" class="btn text-white w-50">Preview</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-3 col-md-6 mb-4" data-aos="flip-left">
+          <div class="card p-0">
+            <span style="background-image:url('/images/pro4.png')"></span>
+            <div class="card-footer">
+              <h3 class="text-center mt-3 card-heading-1">Animated Car</h3>
+              <a href="https://itsmeaditya70.github.io/car-animation/ ">
+                <div class="col-md-12 text-center mt-4 card-btn rounded-pill ">
+                  <button type="button" class="btn text-white w-50">Preview</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================ contact section ========================== -->
+
+    <section id="contact-section">
+       
+      <div class="contact-img mx-md-5 mx-3 " data-aos="fade-right">
+        <img src="/images/pale-work-at-home-1.png" class=" col-10 col-lg-4  col-md-7    " alt="">
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-heading  offset-lg-7   " data-aos="fade-up"
+        data-aos-duration="3000">
+          <h3>LET'S</h3>
+          <h3>CONNECT WITH ME</h3>
+        </div>
+     
+        <div class="contact-details " data-aos="fade-up"
+     data-aos-duration="3000">
+    
+          <div class="phone offset-md-7">
+            <i class="fa-solid fa-phone"></i> <a href="tel: 7277069104" class="">7277069104</a>
+          </div>
+
+          <div class="email offset-md-7">
+            <i class="fa-solid fa-envelope"><a href="mailto: itsmeaditya70@gmail.com" class="mx-4"> itsmeaditya70@gmail.com</a></i> 
+          </div>
+
+          <div class="address offset-md-7">
+            <i class="fa-solid fa-location-dot"></i><a class="mx-4">L.P Savani Road , Adajan ,Surat</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- ============ footer-section ========================= -->
+<section>
+  <footer >
+
+    <div class="footer-section offset-md-5 mt-5" >
+      <img src="/images/logo.png" class="col-md-3 col-4 mt-md-5 offset-md-0 offset-4 "  alt="">
+    </div>
+
+    <h3 class=" text-center mt-5" >Follow Me</h3>
+
+    <div class="social-media-icons text-center mt-4" data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom">
+      <a href="https://www.instagram.com/adityaraj8718/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="linkedin.com/in/aditya-raj-5b209721b"><i class="fa-brands fa-linkedin"></i></a>
+     <a href="https://github.com/itsmeaditya70"><i class="fa-brands fa-github"></i></a> 
+    </div>
+
+    <div class="copyrightinfo text-center mt-5">
+      <p class="mt-5 ">Copyright © 2023. All rights reserved</p>
+    </div>
+  </footer>
+</section>
+    
+    <!-- =================== javascript linking section ================ -->
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
