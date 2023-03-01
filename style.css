@@ -1,0 +1,670 @@
+
+:root{
+
+    --primary-color:#4458dc;
+    --secondary-color:#854fee;
+    --bg-light:#faf8ff;
+    --bg-white:#fff;
+    --bg-black:#000;
+    --bg-gray:#eee;
+    --gradient:linear-gradient(to right,#4458dc 0%,#854fee 100%);
+
+
+    /* for text-color  */
+
+    --primary-text:#4458dc;
+    --secondary-text:#854fee;
+    --text-white:#fff;
+    --text-black:#000;
+    --text-gray:#eee;
+
+    /* font-family  */
+
+    --primary-font: 'Rubik',sans-serif;
+    --sencodary-font: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url('/images/body-bg.png.webp');
+    /* background-size: cover; */
+}
+
+::-webkit-scrollbar{
+    width:4px;
+}
+
+::-webkit-scrollbar-track{
+    background:grey;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.nav-item .nav-link.active{
+    color:var(--primary-text);
+}
+
+.navbar-toggler{
+    margin-top: -34px;
+    position: relative;
+    margin-right: 50px;
+}
+
+.navbar-toggler:focus{
+     box-shadow: none; 
+    
+} 
+.navbar-nav ul{
+/* margin-left:100px; */
+/* position: absolute; */
+}
+
+.nav-bar-elements{
+    /* margin:0px 106px; */
+    
+}
+.navbar-nav li {
+ 
+   display:inline;
+   list-style: none;
+   margin:0px 10px;
+   font-size: 18px;
+   font-style: var(--secondary-font);
+   cursor: pointer;
+   text-align: center;
+
+}
+
+
+
+.navbar-nav li a{
+    color:black;
+   
+}
+
+
+
+.navbar{
+    padding:0.9375rem 0;
+    -o-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    
+}
+
+.home-right-img  {
+/* width:500px */
+margin:-30px 0px
+}
+
+
+.content-section{
+margin: 150px;
+/* position:absolute; */
+font-style: var(--sencodary-font);
+}
+
+.content-section h2{
+    font-size:30px
+}
+
+
+.auto-type{
+    font-size: 30px;
+    font-weight: 600;
+    font-style: var(--secondary-font);
+    color:var(--secondary-color)
+}
+
+.btn-1{
+    background: var(--gradient);
+    color:white;
+    border:none;
+    border-radius:5px;
+    height:40px;
+    width:100px;
+    cursor: pointer;
+}
+
+.btn-2{
+    border:1px solid var(--secondary-color);
+    color:var(--secondary-color);
+    border-radius:5px;
+    height:40px;
+    width:100px;
+    background:transparent;
+    box-shadow: 0px 2px 5px var(--secondary-color);
+    /* margin:0px 25px */
+}
+
+.about-details{
+    /* display: flex;
+    justify-content: end; */
+
+    /* float: right; */
+    position: relative;
+    /* margin-left:80px; */
+
+    margin-top: -270px;
+    width:350px;
+    
+}
+
+.btn-3{
+    background: var(--gradient);
+    color:white;
+    border:none;
+    border-radius:5px;
+    height:50px;
+    width:130px;
+    cursor: pointer;
+}
+
+/* for timeline  */
+
+a{
+    cursor: pointer;
+}
+ 
+.timeline{
+
+    width:80%;
+    height:auto;
+    max-width:800px;
+    margin:0px 230px;
+    position:relative;
+    top:100px;
+    /* overflow: hidden; */
+}
+
+.timeline ul{
+    list-style: none;;
+}
+
+.timeline ul li{
+
+    padding:20px;
+    background-image:linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+    
+    color:white;
+    border-radius:10px;
+    margin-bottom:20px;
+
+}
+
+.timeline ul li:last-child{
+    margin-bottom: 0;
+}
+
+.timeline content h1{
+
+    font-size:25px;
+    font-weight:500;
+    line-height:30px;
+    margin-bottom:10px;
+}
+
+.timeline-content p{
+    font-size:16px;
+    line-height:30px;
+    font-weight:300;
+
+}
+
+ /* for making timeline */
+ 
+    .timeline::before{
+        content: '';
+        position:absolute;
+        height:100%;
+        width:2px;
+        left: 51%;
+        background-image:linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+        
+        transform: translateX(-50%);
+    }
+    .timeline ul li{
+        /* here we have change its value from 50% to 40% */
+        /* width:40%;
+        margin-bottom:50px;
+        position:relative; */
+       
+            width: 69%;
+            margin-bottom: 50px;
+            position: relative;
+        
+    }
+
+    .timeline ul li:nth-child(odd){
+
+        float: left;
+    clear: right;
+    transform: translateX(-141px);
+    }
+
+    .timeline ul li:nth-child(even){
+
+        float: right;
+    clear: left;
+    transform: translateX(111px);
+    }
+
+    .timeline ul li::after{
+
+        content:'';
+        position:absolute;
+        height:20px;
+        width:20px;
+        background-image:linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+        border-radius:50%;
+        top:0;
+    }
+
+    .timeline ul li:nth-child(odd)::after{
+        transform: translate(50%,-50%);
+        right:-30px;
+    }
+    
+    
+    .timeline ul li:nth-child(even)::after{
+        transform: translate(-50%,-50%);
+        left: -19px;
+    }
+
+    #skill-section{
+         margin-top:180px;
+    }
+
+    #skill-section h3{
+        text-align: center;
+        
+    }
+
+    .skill-part .progress{
+        margin:15px 0px;
+    }
+
+    .services-card{
+        overflow: hidden;
+    }
+
+    #service-section h3{
+        /* text-align: center; */
+       
+    }
+
+    .card{
+        cursor: pointer;
+       
+    }
+
+    .card:hover{
+        box-shadow: 1px 5px 10px var(--secondary-color);
+    }
+
+    .portfolio-card{
+        /* height:200px; */
+        /* overflow: hidden; */
+    }
+
+
+    #portfolio-heading{
+        margin-top:100px;
+     }
+  
+    
+
+     .card-section .card{ 
+
+       height: 100%;
+       min-height:470px;
+       overflow:hidden;
+       border:1px solid white;
+       cursor:pointer;
+       margin-top:60px;
+       
+
+       
+     }
+
+    .card span{
+        transition: background-position 4s ease-in-out 0s;
+        width:100%;
+        height:100%;
+        background-position: top center;
+        background-size: cover;
+    }
+
+    .card:hover span{
+        background-position: bottom center;
+    }
+
+
+
+    .card-heading-1{
+        color: rgb(69, 69, 69);
+    }
+
+    .card-btn{
+        background-image: var(--gradient);
+        color:white;
+        box-shadow: 0px 0px 7px var(--secondary-color);
+    }
+
+    .more-btn{
+        background-image: var(--gradient);
+        position: relative;
+        top:120px;
+        cursor: pointer;
+        box-shadow: 0px 0px 12px var(--secondary-color);
+        border-radius:8px;
+        font-family: var(--secondary-font);
+        
+    }
+
+
+    .contact-img img{
+        margin:170px 0px;
+        position: absolute;
+    
+    }
+
+    .contact-heading {
+        margin-top:150px;
+        position: absolute;
+        /* margin-left:727px; */
+    }
+
+    .contact-details .phone i{
+        margin-top: 290px;
+        position: absolute;
+        font-size:20px;
+        
+    }
+
+    .contact-details .phone a{
+        margin-top: 282px;
+        position: absolute;
+        font-size:20px;
+        text-decoration:none;
+        color:var(--secondary-color);
+        font-weight:620;
+        font-style:var(--secondary-font) ;
+        margin-left:45px
+    }
+
+    .contact-details .email i{
+        margin-top: 350px;
+        /* position: absolute; */
+        font-size:20px;
+        
+    }
+    
+    .contact-details .email a{
+        margin-top: 0px;
+        position: absolute;
+        font-size:15px;
+        text-decoration:none;
+        color:var(--secondary-color);
+        font-weight:620;
+        font-style:var(--secondary-font) 
+    }
+
+    .contact-details .address i{
+        margin-top: 30px;
+        /* position: absolute; */
+        font-size:20px;
+        
+    }
+    
+    .contact-details .address a{
+        margin-top: 23px;
+        position: absolute;
+        font-size:20px;
+        text-decoration:none;
+        color:var(--secondary-color);
+        font-weight:620;
+        font-style:var(--secondary-font) 
+    }
+
+  
+    footer{
+        margin-top:200px
+    }
+
+    .social-media-icons i{
+ font-size: 20px;
+ margin: 0 10px;
+ color:black
+    }
+
+
+
+   /* ====================== for responsive ==================== */
+
+   @media screen and (min-width:100px) and (max-width:425px) {
+    /* .navbar-toggler{
+  margin-right:20px;
+  position: relative;
+    } */
+
+    .home-img{
+        position: relative;
+        margin:0px 0px
+    }
+    .content-section{
+        margin:120px auto;
+   
+    }
+
+    .about-img{
+        margin:0px 8px
+    }
+
+    .about-details{
+        margin: 50px 5px;
+        width: 261px;
+    }
+
+    .timeline{
+        margin-left: 65px;
+        width: 67%;
+    }
+    .timeline ul li:nth-child(odd) {
+       
+        transform: translateX(-89px);
+    }
+
+    .timeline ul li:nth-child(even) {
+       
+        transform: translateX(48px);
+        width: 70%;
+    }
+
+    .timeline ul li {
+        width: 72%;
+        
+    }
+
+    .timeline-content h2{
+        font-size:18px
+    }
+
+    .skill-part{
+        margin:20px  20px
+    }
+
+    .services-card{
+        margin-left:15px;
+        width:343px;
+    }
+
+    .portfolio-card{
+        margin-left:6px;
+        width:360px;
+    }
+    
+    .contact-img img{
+        margin-top:120px
+    }
+
+    .contact-heading{
+        margin-left:60px;
+        margin-top:419px
+    }
+
+    .contact-details .phone i {
+        margin-left: 57px;
+        margin-top: 540px;
+    }
+
+    .contact-details .phone a {
+        margin-left: 100px;
+        margin-top: 534px;
+    }
+
+    .contact-details .email i {
+        margin-left: 57px;
+        margin-top: 607px;
+        position: relative;
+    }
+
+    .contact-details .email a {
+        /* margin-left: 117px; */
+        margin-top: 2px;
+    }
+
+    .contact-details .address i {
+        margin-left: 57px;
+        margin-top: 45px;
+        position: relative;
+    
+    }
+
+    .contact-details .address a {
+        margin-left: 117px;
+        margin-top: 37px;
+    }
+
+    .toggle-btn{
+        margin-left: 30px;
+    }
+   }
+
+   /* ====================== for responsive ==================== */
+
+   @media screen and (min-width:426px) and (max-width:1024px) {
+    /* .navbar-toggler{
+  margin-right:20px;
+  position: relative;
+    } */
+
+    .home-img{
+        position: relative;
+        margin:0px 0px
+    }
+    .content-section{
+        margin:120px auto;
+   
+    }
+
+    .about-img{
+        margin:0px 8px
+    }
+
+    .about-details{
+        margin: 50px 5px;
+        width: 261px;
+    }
+
+    .timeline{
+        margin-left: 123px;
+        width: 67%;
+    }
+    .timeline ul li:nth-child(odd) {
+       
+        transform: translateX(-135px);
+    }
+
+    .timeline ul li:nth-child(even) {
+       
+        transform: translateX(94px);
+        width: 70%;
+    }
+
+    .timeline ul li {
+        width: 72%;
+        
+    }
+
+    .timeline-content h2{
+        font-size:18px
+    }
+
+    .skill-part{
+        margin:20px  20px
+    }
+
+    .services-card{
+        margin-left:15px;
+        /* width:343px; */
+    }
+
+    .portfolio-card{
+        margin-left:6px;
+        /* width:390px; */
+    }
+    
+    .contact-img img{
+        margin-top:120px;
+         margin-left:120px
+    }
+
+    .contact-heading{
+        margin-left: 222px;
+        margin-top: 472px;
+    }
+    .contact-details .phone i {
+        margin-left: -216px;
+        margin-top: 602px;
+    }
+
+    .contact-details .phone a {
+        margin-left: -155px;
+        margin-top: 593px;
+    }
+
+    .contact-details .email i {
+        margin-left: -216px;
+        margin-top: 654px;
+        position: relative
+    }
+
+    .contact-details .email a {
+        /* margin-left: 117px; */
+        margin-top: 2px;
+    }
+
+    .contact-details .address i {
+        margin-left: -214px;
+        margin-top: 45px;
+        position: relative;
+    
+    }
+
+    .contact-details .address a {
+        margin-left: 117px;
+        margin-top: 37px;
+    }
+
+    .toggle-btn{
+        margin-left: 30px;
+    }
+   }
